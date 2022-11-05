@@ -23,6 +23,13 @@ pipeline {
                 }
               }
             } 
+        stage("build ansible") {
+          steps {
+              script {
+                 gv.buildAnsible()
+                }
+              }
+            }  
   
    }
 }
