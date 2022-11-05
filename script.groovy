@@ -14,4 +14,9 @@ def buildDocker() {
   sh'ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml'
 }
 
+def pushDockerhub() {
+   echo "push the image..."
+   sh'ansible-playbook ansible/docker-registry.yml -i ansible/inventory/host.yml'
+}
+
   return this
