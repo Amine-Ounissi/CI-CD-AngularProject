@@ -1,6 +1,6 @@
 ---
 # tasks file for docker
-        - name: create image docker
+        - name: create docker image
           docker_image:
             name: devops
             build:
@@ -9,7 +9,7 @@
             source: build
             state: present
             force_source: true
-        - name: run container docker
+        - name: run docker container
           docker_container:
             name: myapp_container
             image: devops:latest
