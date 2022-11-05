@@ -14,17 +14,8 @@ pipeline {
                 }
               }
             }
-    
-        stage("build jar") {
-      
-          steps {
-              script {
-                 gv.buildJar()    
-                }
-              }
-            } 
-
-        stage("build ansible") {
+          
+        stage("build application") {
           steps {
               script {
                  gv.buildAnsible()
