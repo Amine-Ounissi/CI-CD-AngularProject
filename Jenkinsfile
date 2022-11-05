@@ -39,6 +39,12 @@ pipeline {
                 }
               }
             }
-  
+      stage("push image") {
+          steps {
+              script {
+                 gv.pushDockerhub()
+                }
+              }
+            }
    }
 }
