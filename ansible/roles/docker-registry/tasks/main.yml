@@ -5,7 +5,7 @@
   docker_login:
     email: "amine.ounissi@esprit.tn"
     username: "amineounissi"
-    password: "14986421ghaithounissi"
+    password: "amine2022"
 - name: push to dockerhub
   docker_image:
     name: devops:latest
